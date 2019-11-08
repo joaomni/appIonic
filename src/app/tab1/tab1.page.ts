@@ -10,6 +10,7 @@ import { convertUpdateArguments } from '@angular/compiler/src/compiler_util/expr
 export class Tab1Page {
 
   private altura:string;
+  private nome:string;
   private resultado:number;
   private allOld:number;
 
@@ -23,7 +24,7 @@ export class Tab1Page {
     var sliding = document.createElement('ion-item-sliding');
     var item = document.createElement('ion-item');
     var label = document.createElement('ion-label');
-    var text = document.createTextNode(String(this.resultado));
+    var text = document.createTextNode(String("Nome: "+this.nome+", Peso ideal: "+this.resultado));
     label.appendChild(text);
     item.appendChild(label);
     sliding.appendChild(item);
